@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tasks',
+     'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -113,3 +115,6 @@ STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'frontend','build','static'),
 ]
 
+GRAPHENE = {
+    'SCHEMA': 'tasks.schema' # Where your Graphene schema lives
+}
