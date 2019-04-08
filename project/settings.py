@@ -116,5 +116,5 @@ STATICFILES_DIRS = [
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'tasks.schema' # Where your Graphene schema lives
+    'SCHEMA': 'project.tasks.schema' # Where your Graphene schema lives
 }

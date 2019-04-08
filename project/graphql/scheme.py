@@ -1,9 +1,11 @@
 import graphene
 
-class Queries(
-    graphene.ObjectType
-):
-    dummy = graphene.String()
+import tasks.schema
 
 
-schema = graphene.Schema(query=Queries)
+class Query(tasks.schema.Query, graphene.ObjectType):
+    # This class will inherit from multiple Queries
+    # as we begin to add more apps to our project
+    pass
+
+schema = graphene.Schema(query=Query)
